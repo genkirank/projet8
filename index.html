@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<title>Nina Carducci - Photographe</title>
+	<link rel="preload" as="image" href="assets/images/slider/ryoji-Iwata.webp">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
@@ -38,78 +39,37 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<picture>
-					<!-- Grand écran -->
-					<source
-							srcset="assets/images/slider/ryoji-Iwata.webp"
-							media="(min-width: 1200px)"
-							/>
-						
-					<!-- Tablette -->
-					<source 
-							srcset="assets/images/slider/ryoji-Iwata.webp"
-							media="(min-width: 768px)"
-							/>
-					<!-- Mobile (image par défaut) -->
 					<img 
 							src="assets/images/slider/ryoji-Iwata.webp"
 							alt="Architecture moderne capturée avec un angle artistique, mettant en valeur des lignes géométriques et des contrastes saisissants. Une image qui illustre parfaitement l’élégance urbaine et le minimalisme architectural. Parcourez notre portfolio pour des photographies architecturales de qualité professionnelle."
-							width="640"
-							height="360"
 							class="img-fluid d-block w-100"/>
-			</picture>
 			</div>
-			
 			<div class="carousel-item">
-				<picture>
-					<!-- Grand écran -->
-					<source 
-							srcset="assets/images/slider/nicholas-Green.webp"
-							media="(min-width: 1200px)"
-							 />
-					<!-- Tablette -->
-					<source 
-							srcset="assets/images/slider/nicholas-Green.webp"
-							media="(min-width: 768px)"
-						/>
-					<!-- Mobile (image par défaut) -->
+			
 					<img 
 							src="assets/images/slider/nicholas-Green.webp"
 							alt="Vue panoramique d’une forêt enveloppée dans une brume mystique, parfaite pour transmettre une ambiance paisible et onirique. Une photographie paysagère mettant en valeur la beauté naturelle et la sérénité de la nature. Explorez notre galerie pour des photos de paysages enchanteurs et inspirants."
-							width="640"
-							height="360"
-							class="img-fluid d-block w-100" />
-			</picture>
+							
+							class="img-fluid d-block w-100" loading="lazy"/>
+			
 				</div>
 			<div class="carousel-item">
-				<picture>
-					<!-- Grand écran -->
-					<source 
-							srcset="assets/images/slider/edward-Cisneros.webp"
-							media="(min-width: 1200px)"
-							 />
-					<!-- Tablette -->
-					<source 
-							srcset="assets/images/slider/edward-Cisneros.webp"
-							media="(min-width: 768px)"
-						 />
-					<!-- Mobile (image par défaut) -->
+	
 					<img 
 							src="assets/images/slider/edward-Cisneros.webp"
 							alt="Portrait captivant d’une femme en contre-jour avec des nuances chaudes et une composition minimaliste. Parfait exemple d’art photographique mettant en valeur la lumière naturelle et les émotions subtiles. Découvrez des portraits uniques réalisés par un photographe professionnel pour capturer vos moments inoubliables."
-							width="640"
-							height="360"
-							class="img-fluid d-block w-100" />
-			</picture>
+						
+							class="img-fluid d-block w-100" loading="lazy" />
+			
 				</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
+			<span class="visually-hidden">Previous Image</span>
 		</button>
 		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
+			<span class="visually-hidden">Next image</span>
 		</button>
 	</div>
 </div>
